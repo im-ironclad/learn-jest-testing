@@ -9,5 +9,23 @@
   <h1>
     Heading 1
   </h1>
+
+  <p>
+    Paragraph element
+  </p>
+
+  <button id="button">
+    Change text
+  </button>
+
+  <script>
+    (() => {
+      const btn = document.getElementById('button');
+      const pEl = document.querySelector('p');
+      btn.addEventListener('click', () => {
+        pEl.textContent = 'Yay, text changed!';
+      })
+    })()
+  </script>
 </body>
 </html>
